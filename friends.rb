@@ -45,3 +45,13 @@ def joined_favourite_food(people)
 return foods
 
 end
+
+def has_no_friends(people)
+  no_friends =[]
+  for person in people
+    if person[:friends] == []
+      no_friends.push(person[:name])
+    end
+  end
+  return no_friends
+end
