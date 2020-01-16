@@ -107,7 +107,7 @@ end
 
   def test_remove_friend
     remove_friend(@person4, "Shaggy")
-    assert_equal(2, @person4[:friends].length)
+    assert_equal(["Velma", "Daphne"], @person4[:friends])
   end
 
 

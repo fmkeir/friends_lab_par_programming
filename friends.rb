@@ -49,7 +49,7 @@ end
 def has_no_friends(people)
   no_friends =[]
   for person in people
-    if person[:friends] == []
+    if person[:friends].length() == 0
       no_friends.push(person[:name])
     end
   end
